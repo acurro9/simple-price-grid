@@ -1,0 +1,118 @@
+/*font-family: 'Karla', sans-serif;
+font size: 16px*/
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan2: hsl(179, 62%, 53%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+
+}
+/*Globales*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+   *, *::before, *::after {
+    box-sizing: inherit;
+}
+body{
+    background-color: var(--LightGray);
+}
+main{
+    max-width: 37rem;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+section{
+    padding: 2rem 2.5rem;
+}
+
+/*Section*/
+
+.section1{
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.section1__h1{
+    color: var(--Cyan);
+}
+.section1__h2{
+    color: var(--BrightYellow);
+    font-size: 18px;
+}
+.section1__p{
+    color: var(--GrayishBlue);
+}
+
+.section2{
+    background-color: var(--Cyan);
+    color: white;
+}
+.section2__span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.section2__p--month{
+    display: inline;
+    color: var(--LightGray);
+    opacity: 0.6;
+}
+.section2__div{
+    display: flex;
+    justify-content: center;
+}
+.section3{
+    background-color: var(--Cyan2);
+    border-radius: 0 0 0.5rem 0.5rem;
+    color: white;
+}
+.section3__p{
+    color: var(--LightGray);
+    opacity: 0.8;
+}
+
+/*Button*/
+button{
+    background-color: var(--BrightYellow);
+    border: none;
+    width: 95%;
+    height: 5rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    -webkit-box-shadow: -2px 3px 23px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 23px -7px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 23px -7px rgba(0,0,0,0.75);
+}
+
+/*Media Queries*/
+@media (min-width: 768px) {
+    main{
+        max-width: 600px;
+        height: 50%;
+    }
+    .section__grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 50%;
+    }
+    .section2{
+        border-radius: 0 0 0 0.5rem;
+    }
+    .section3{
+        border-radius: 0 0  0.5rem 0;
+    }
+}
+
+    /*Footer*/
+    .attribution { 
+        font-size: 11px; text-align: center;
+     }
+    .attribution a { 
+        color: hsl(228, 45%, 44%);
+     } 
